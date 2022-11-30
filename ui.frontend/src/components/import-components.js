@@ -55,25 +55,25 @@ const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-b
 const CarouselV1 = withAsyncImport(() => import(`@adobe/aem-core-components-react-spa/dist/container/carousel/v1/CarouselV1`));
 
 
-MapTo('aem_dialogs_react/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
-MapTo('aem_dialogs_react/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
-MapTo('aem_dialogs_react/components/separator')(SeparatorV1, {isEmpty: SeparatorV1IsEmptyFn});
+MapTo('weatherapp/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
+MapTo('weatherapp/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
+MapTo('weatherapp/components/separator')(SeparatorV1, {isEmpty: SeparatorV1IsEmptyFn});
 
-MapTo('aem_dialogs_react/components/button')(ButtonV1, {isEmpty: ButtonV1IsEmptyFn});
-MapTo('aem_dialogs_react/components/teaser')(TeaserV1, {isEmpty: TeaserV1IsEmptyFn});
-MapTo('aem_dialogs_react/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});
-MapTo('aem_dialogs_react/components/title')(TitleV2, {isEmpty: TitleV2IsEmptyFn});
-
-
-MapTo('aem_dialogs_react/components/breadcrumb')(BreadCrumbV2, {isEmpty: BreadCrumbV2IsEmptyFn});
-MapTo('aem_dialogs_react/components/navigation')(NavigationV1);
-MapTo('aem_dialogs_react/components/languagenavigation')(LanguageNavigationV1);
+MapTo('weatherapp/components/button')(ButtonV1, {isEmpty: ButtonV1IsEmptyFn});
+MapTo('weatherapp/components/teaser')(TeaserV1, {isEmpty: TeaserV1IsEmptyFn});
+MapTo('weatherapp/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});
+MapTo('weatherapp/components/title')(TitleV2, {isEmpty: TitleV2IsEmptyFn});
 
 
-MapTo('aem_dialogs_react/components/tabs')(TabsV1, {isEmpty: TabsV1IsEmptyFn});
-MapTo('aem_dialogs_react/components/accordion')(AccordionV1, {isEmpty: AccordionV1IsEmptyFn});
-MapTo('aem_dialogs_react/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEmptyFn});
-MapTo('aem_dialogs_react/components/container')(ContainerV1, {isEmpty: ContainerV1IsEmptyFn});
+MapTo('weatherapp/components/breadcrumb')(BreadCrumbV2, {isEmpty: BreadCrumbV2IsEmptyFn});
+MapTo('weatherapp/components/navigation')(NavigationV1);
+MapTo('weatherapp/components/languagenavigation')(LanguageNavigationV1);
+
+
+MapTo('weatherapp/components/tabs')(TabsV1, {isEmpty: TabsV1IsEmptyFn});
+MapTo('weatherapp/components/accordion')(AccordionV1, {isEmpty: AccordionV1IsEmptyFn});
+MapTo('weatherapp/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEmptyFn});
+MapTo('weatherapp/components/container')(ContainerV1, {isEmpty: ContainerV1IsEmptyFn});
 
 
 //lazy load of internal component (hello world)
@@ -91,4 +91,4 @@ const TextEditConfig = {
     }
 };
 
-MapTo('aem_dialogs_react/components/text')(LazyTextComponent, TextEditConfig);
+MapTo('weatherapp/components/text')(LazyTextComponent, TextEditConfig);

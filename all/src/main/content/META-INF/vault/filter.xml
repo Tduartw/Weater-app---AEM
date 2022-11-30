@@ -15,6 +15,6 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <workspaceFilter version="1.0">
-    <filter root="/apps/aem_dialogs_react-packages"/>
-    <filter root="/apps/aem_dialogs_react-vendor-packages"/>
+    <filter root="/apps/weatherapp-packages"/>
+    <filter root="/apps/weatherapp-vendor-packages"/>
 </workspaceFilter>

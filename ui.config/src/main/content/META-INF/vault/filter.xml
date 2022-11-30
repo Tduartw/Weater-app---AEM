@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/aem_dialogs_react/osgiconfig"/>
+    <filter root="/apps/weatherapp/osgiconfig"/>
 </workspaceFilter>

@@ -6,18 +6,18 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>br.com.compass.aem_dialogs_react</groupId>
-        <artifactId>aem_dialogs_react</artifactId>
-        <version>1.0.0</version>
+        <groupId>com.weatherapp</groupId>
+        <artifactId>weatherapp</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem_dialogs_react.ui.apps.structure</artifactId>
+    <artifactId>weatherapp.ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>AemDialogsReact - Repository Structure Package</name>
+    <name>Weather App - Repository Structure Package</name>
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
         Any roots in the Code packages of this project should have their parent enumerated in the Filters list below.
@@ -35,7 +35,7 @@
                     <filters>
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
-                        <filter><root>/apps/aem_dialogs_react</root></filter>
+                        <filter><root>/apps/weatherapp</root></filter>
 
                         <!-- Common overlay roots -->
                         <filter><root>/apps/sling</root></filter>
@@ -48,7 +48,7 @@
                         <filter><root>/apps/settings</root></filter>
 
                         <!-- DAM folder root, will be created via repoinit -->
-                        <filter><root>/content/dam/aem_dialogs_react</root></filter>
+                        <filter><root>/content/dam/weatherapp</root></filter>
 
                     </filters>
                 </configuration>

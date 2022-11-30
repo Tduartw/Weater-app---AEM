@@ -21,19 +21,19 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>br.com.compass.aem_dialogs_react</groupId>
-        <artifactId>aem_dialogs_react</artifactId>
-        <version>1.0.0</version>
+        <groupId>com.weatherapp</groupId>
+        <artifactId>weatherapp</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem_dialogs_react.ui.content</artifactId>
+    <artifactId>weatherapp.ui.content</artifactId>
     <packaging>content-package</packaging>
-    <name>AemDialogsReact - UI content</name>
-    <description>UI content package for AemDialogsReact</description>
+    <name>Weather App - UI content</name>
+    <description>UI content package for Weather App</description>
 
     <!-- ====================================================================== -->
     <!-- B U I L D   D E F I N I T I O N                                        -->
@@ -50,8 +50,8 @@
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
-                    <group>br.com.compass.aem_dialogs_react</group>
-                    <name>aem_dialogs_react.ui.content</name>
+                    <group>com.weatherapp</group>
+                    <name>weatherapp.ui.content</name>
                     <packageType>content</packageType>
                     <accessControlHandling>merge</accessControlHandling>
                     <validatorsSettings>
@@ -63,8 +63,8 @@
                     </validatorsSettings>
                     <dependencies>
                         <dependency>
-                            <groupId>br.com.compass.aem_dialogs_react</groupId>
-                            <artifactId>aem_dialogs_react.ui.apps</artifactId>
+                            <groupId>com.weatherapp</groupId>
+                            <artifactId>weatherapp.ui.apps</artifactId>
                             <version>${project.version}</version>
                         </dependency>
                     </dependencies>
@@ -87,13 +87,13 @@
     <!-- ====================================================================== -->
     <dependencies>
         <dependency>
-            <groupId>br.com.compass.aem_dialogs_react</groupId>
-            <artifactId>aem_dialogs_react.core</artifactId>
+            <groupId>com.weatherapp</groupId>
+            <artifactId>weatherapp.core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>br.com.compass.aem_dialogs_react</groupId>
-            <artifactId>aem_dialogs_react.ui.apps</artifactId>
+            <groupId>com.weatherapp</groupId>
+            <artifactId>weatherapp.ui.apps</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>

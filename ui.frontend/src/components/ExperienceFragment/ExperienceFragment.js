@@ -28,5 +28,5 @@ const ExperienceFragmentVariationConfig = {
     }
 };
 
-MapTo('aem_dialogs_react/components/experiencefragment')(withComponentMappingContext(Container), ExperienceFragmentVariationConfig);
+MapTo('weatherapp/components/experiencefragment')(withComponentMappingContext(Container), ExperienceFragmentVariationConfig);
 

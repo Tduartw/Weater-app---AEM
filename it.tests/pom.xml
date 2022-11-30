@@ -18,15 +18,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>br.com.compass.aem_dialogs_react</groupId>
-        <artifactId>aem_dialogs_react</artifactId>
-        <version>1.0.0</version>
+        <groupId>com.weatherapp</groupId>
+        <artifactId>weatherapp</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>aem_dialogs_react.it.tests</artifactId>
-    <name>AemDialogsReact - Integration Tests</name>
-    <description>Integration Tests for AemDialogsReact</description>
+    <artifactId>weatherapp.it.tests</artifactId>
+    <name>Weather App - Integration Tests</name>
+    <description>Integration Tests for Weather App</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

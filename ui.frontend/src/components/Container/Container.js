@@ -30,5 +30,5 @@ const ContainerConfig = {
 };
 
 
-MapTo('aem_dialogs_react/components/container')(withComponentMappingContext(AllowedComponentsContainer), ContainerConfig);
+MapTo('weatherapp/components/container')(withComponentMappingContext(AllowedComponentsContainer), ContainerConfig);
 

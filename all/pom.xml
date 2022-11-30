@@ -22,19 +22,19 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>br.com.compass.aem_dialogs_react</groupId>
-        <artifactId>aem_dialogs_react</artifactId>
-        <version>1.0.0</version>
+        <groupId>com.weatherapp</groupId>
+        <artifactId>weatherapp</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem_dialogs_react.all</artifactId>
+    <artifactId>weatherapp.all</artifactId>
     <packaging>content-package</packaging>
-    <name>AemDialogsReact - All</name>
-    <description>All content package for AemDialogsReact</description>
+    <name>Weather App - All</name>
+    <description>All content package for Weather App</description>
 
     <!-- ====================================================================== -->
     <!-- B U I L D   D E F I N I T I O N                                        -->
@@ -49,43 +49,43 @@
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <group>br.com.compass.aem_dialogs_react</group>
+                    <group>com.weatherapp</group>
                     <packageType>container</packageType>
                     <!-- skip sub package validation for now as some vendor packages like CIF apps will not pass -->
                     <skipSubPackageValidation>true</skipSubPackageValidation>
                     <embeddeds>
                         <embedded>
-                            <groupId>br.com.compass.aem_dialogs_react</groupId>
-                            <artifactId>aem_dialogs_react.ui.apps</artifactId>
+                            <groupId>com.weatherapp</groupId>
+                            <artifactId>weatherapp.ui.apps</artifactId>
                             <type>zip</type>
-                            <target>/apps/aem_dialogs_react-packages/application/install</target>
+                            <target>/apps/weatherapp-packages/application/install</target>
                         </embedded>
                         <embedded>
-                            <groupId>br.com.compass.aem_dialogs_react</groupId>
-                            <artifactId>aem_dialogs_react.core</artifactId>
-                            <target>/apps/aem_dialogs_react-packages/application/install</target>
+                            <groupId>com.weatherapp</groupId>
+                            <artifactId>weatherapp.core</artifactId>
+                            <target>/apps/weatherapp-packages/application/install</target>
                         </embedded>
                         <embedded>
-                            <groupId>br.com.compass.aem_dialogs_react</groupId>
-                            <artifactId>aem_dialogs_react.ui.content</artifactId>
+                            <groupId>com.weatherapp</groupId>
+                            <artifactId>weatherapp.ui.content</artifactId>
                             <type>zip</type>
-                            <target>/apps/aem_dialogs_react-packages/content/install</target>
+                            <target>/apps/weatherapp-packages/content/install</target>
                         </embedded>
                         <embedded>
-                            <groupId>br.com.compass.aem_dialogs_react</groupId>
-                            <artifactId>aem_dialogs_react.ui.config</artifactId>
+                            <groupId>com.weatherapp</groupId>
+                            <artifactId>weatherapp.ui.config</artifactId>
                             <type>zip</type>
-                            <target>/apps/aem_dialogs_react-packages/application/install</target>
+                            <target>/apps/weatherapp-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.aem</groupId>
                             <artifactId>spa.project.core.core</artifactId>
-                            <target>/apps/aem_dialogs_react-vendor-packages/application/install</target>
+                            <target>/apps/weatherapp-vendor-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.aem</groupId>
                             <artifactId>spa.project.core.ui.apps</artifactId>
-                            <target>/apps/aem_dialogs_react-vendor-packages/application/install</target>
+                            <target>/apps/weatherapp-vendor-packages/application/install</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
@@ -189,20 +189,20 @@
     <!-- ====================================================================== -->
     <dependencies>
         <dependency>
-            <groupId>br.com.compass.aem_dialogs_react</groupId>
-            <artifactId>aem_dialogs_react.ui.apps</artifactId>
+            <groupId>com.weatherapp</groupId>
+            <artifactId>weatherapp.ui.apps</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
-            <groupId>br.com.compass.aem_dialogs_react</groupId>
-            <artifactId>aem_dialogs_react.ui.content</artifactId>
+            <groupId>com.weatherapp</groupId>
+            <artifactId>weatherapp.ui.content</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
-            <groupId>br.com.compass.aem_dialogs_react</groupId>
-            <artifactId>aem_dialogs_react.ui.config</artifactId>
+            <groupId>com.weatherapp</groupId>
+            <artifactId>weatherapp.ui.config</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
